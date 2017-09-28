@@ -9,11 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Salary Calculator</title>
         <link rel="stylesheet" type="text/css" href="CSS_Formating.css"/>
     </head>
     <body>
         <h1>HW3</h1>
+        <hr>
+        <br>
         <form name="calcForm" action="results.jsp" method="post">
             
             <table>
@@ -21,22 +23,22 @@
                     
                      <tr>
                          <td>Hours Worked:</td>
-                         <td><input type="Number" name="hoursWorked" value="" size="50"></td> 
+                         <td><input type="integer" name="hoursWorked" value="" size="50"></td> 
                      </tr>
                     
                      <tr>
                          <td>Hourly Rate:</td>
-                         <td><input type="number" name="hourlyPay" value="" size="50"></td> 
+                         <td><input type="integer" name="hourlyPay" value="" size="50"></td> 
                      </tr>
                      
                      <tr>
                          <td>Pre-tax Default:</td>
-                         <td><input type="number" name="preTax" value="" size="50"></td> 
+                         <td><input type="integer" name="preTax" value="" size="50"></td> 
                      </tr>
                      
                      <tr>
                          <td>Post-tax Default:</td>
-                         <td><input type="number" name="postTax" value="" size="50"></td> 
+                         <td><input type="integer" name="postTax" value="" size="50"></td> 
                      </tr>
                 </tbody>
             </table>
