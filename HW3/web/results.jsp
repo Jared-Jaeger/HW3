@@ -17,17 +17,21 @@
     double hourlyPay = Double.parseDouble(request.getParameter("hourlyPay"));
     double preTax = Double.parseDouble(request.getParameter("preTax"));
     double postTax = Double.parseDouble(request.getParameter("postTax"));
+    //created
     double hoursOt = 0;
     double hourlyPayOt = 0;
     double taxRate = 0;
     double taxAmt = 0;
     double postTaxPay = 0;
+    //if function to change OT variables if hours are more than 40
     if(hoursWorked > 40){
-    hoursOt = hoursWorked - 40;
-    hourlyPayOt = hourlyPay * 1.5;
+         hoursOt = hoursWorked - 40;
+        hourlyPayOt = hourlyPay * 1.5;
     }
+    
     double grossPay = hourlyPay* hoursWorked + hoursOt * hourlyPayOt;
     double preTaxPay = grossPay - preTax;
+    //if function to determine what tax rate
     if(grossPay > 500)
     {
         taxRate = .22;
@@ -41,12 +45,15 @@
         taxAmt = preTaxPay * taxRate;
         postTaxPay = preTaxPay - taxAmt;
     }
+    
     double netPay = postTaxPay - postTax;
+    
     %>
     <body>
         <h1>Calculated Results</h1>
         <hr class="style18">
         <br>
+        <div class ="centerAlign">
         <table BORDER="1">
                 <tbody>
                     
@@ -99,5 +106,6 @@
                      </tr>
                 </tbody>
             </table>
+        </div>
     </body>
 </html>

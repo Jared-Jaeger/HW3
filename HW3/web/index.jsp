@@ -17,7 +17,7 @@
         <hr class="style18">
         <br>
         <form name="calcForm" action="results.jsp" method="post">
-            
+            <div class ="centerAlign">
             <table>
                 <tbody>
                     
@@ -42,8 +42,10 @@
                      </tr>
                 </tbody>
             </table>
+                <br>
             <input type="reset" value ="Clear" id="clear">
             <input type="submit" value="Submit" id="submit">
+            </div>
         </form>
     </body>
 </html>
