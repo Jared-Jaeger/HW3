@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>User Information</title>
+        <title>Calculated Results</title>
         <link rel="stylesheet" type="text/css" href="CSS_Formating.css"/>
     </head>
     <%
@@ -44,8 +44,8 @@
     double netPay = postTaxPay - postTax;
     %>
     <body>
-        <h1>User Information</h1>
-        <hr>
+        <h1>Calculated Results</h1>
+        <hr class="style18">
         <br>
         <table BORDER="1">
                 <tbody>

@@ -13,8 +13,8 @@
         <link rel="stylesheet" type="text/css" href="CSS_Formating.css"/>
     </head>
     <body>
-        <h1>HW3</h1>
-        <hr>
+        <h1>Salary Calculator</h1>
+        <hr class="style18">
         <br>
         <form name="calcForm" action="results.jsp" method="post">
             
