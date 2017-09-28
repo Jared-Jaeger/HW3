@@ -14,6 +14,7 @@
     </head>
     <body>
         <h1>Salary Calculator</h1>
+        <br>
         <hr class="style18">
         <br>
         <form name="calcForm" action="results.jsp" method="post">

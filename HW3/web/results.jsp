@@ -51,6 +51,7 @@
     %>
     <body>
         <h1>Calculated Results</h1>
+        <br>
         <hr class="style18">
         <br>
         <div class ="centerAlign">
