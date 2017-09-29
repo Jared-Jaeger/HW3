@@ -23,13 +23,15 @@
     double taxRate = 0;
     double taxAmt = 0;
     double postTaxPay = 0;
+    double regHours = 40;
     //if function to change OT variables if hours are more than 40
     if(hoursWorked > 40){
-         hoursOt = hoursWorked - 40;
+         hoursOt = hoursWorked - regHours;
         hourlyPayOt = hourlyPay * 1.5;
+        hoursWorked = regHours;
     }
     
-    double grossPay = hourlyPay* hoursWorked + hoursOt * hourlyPayOt;
+    double grossPay = (hourlyPay* hoursWorked) + (hoursOt * hourlyPayOt);
     double preTaxPay = grossPay - preTax;
     //if function to determine what tax rate
     if(grossPay > 500)
